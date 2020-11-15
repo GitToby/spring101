@@ -12,7 +12,7 @@ import java.util.List;
 @Getter
 @Setter
 @Builder
-@Document("ingredients")
+@Document("scrapes")
 public class Recipe {
     @Id
     private String id;
@@ -24,12 +24,7 @@ public class Recipe {
     private List<String> ingredients;
     private String instructions;
     private String ratings;
-    private String reviews;
+    private List<Review> reviews;
     private String locale;
     private String scrape_time;
-
-    @Override
-    public String toString() {
-        return MessageFormat.format("Recipe {0} from {1} ({2})", title, url, id);
-    }
 }
