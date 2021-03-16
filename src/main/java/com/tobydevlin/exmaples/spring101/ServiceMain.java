@@ -1,17 +1,16 @@
 package com.tobydevlin.exmaples.spring101;
 
 import com.tobydevlin.exmaples.spring101.components.data.RecipeRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@Slf4j
 @SpringBootApplication
 public class ServiceMain implements CommandLineRunner {
     private final RecipeRepository recipeRepository;
-    Logger logger = LoggerFactory.getLogger(ServiceMain.class);
 
     @Autowired
     public ServiceMain(RecipeRepository recipeRepository) {
@@ -24,6 +23,6 @@ public class ServiceMain implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        logger.info("{} recipes found during startup", recipeRepository.count());
+        log.info("{} recipes found during startup", recipeRepository.count());
     }
 }

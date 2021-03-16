@@ -1,17 +1,13 @@
 package com.tobydevlin.exmaples.spring101.pojo;
 
-import lombok.*;
+import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.text.MessageFormat;
 import java.util.List;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Setter
-@Builder
+
+@Data
 @Document("scrapes")
 public class Recipe {
     @Id
