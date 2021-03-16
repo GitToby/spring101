@@ -10,5 +10,7 @@ springdoc:
 server:
   port: 12345
 
-secrets:
-  mongo_pw:
+data:
+  mongo:
+    host: "tobytestcluster.uxibf.mongodb.net"
+    database: "foodie"
