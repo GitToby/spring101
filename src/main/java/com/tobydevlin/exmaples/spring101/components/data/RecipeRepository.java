@@ -6,6 +6,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import java.util.stream.Stream;
 
 public interface RecipeRepository extends MongoRepository<Recipe, String> {
-
     Stream<Recipe> findByTitleLike(String s);
 }

@@ -7,5 +7,6 @@ RUN ["mvn", "package"]
 FROM openjdk:15-alpine as runtime
 WORKDIR /example
 COPY --chown=777 --from=build /app/target/*.jar app.jar
+ENV MONGO_PASS ""
 EXPOSE 12345 12345
 ENTRYPOINT ["java", "-jar", "app.jar"]

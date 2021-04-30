@@ -1,12 +1,8 @@
 package com.tobydevlin.exmaples.spring101.pojo;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
-@AllArgsConstructor
+@Data
 public class Review {
     private String reviewText;
     private int rating;

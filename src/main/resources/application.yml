@@ -1,16 +1,6 @@
-spring:
-  data:
-    rest:
-      basePath: /data
-
 springdoc:
   api-docs:
     path: /docs
 
 server:
   port: 12345
-
-data:
-  mongo:
-    host: "tobytestcluster.uxibf.mongodb.net"
-    database: "foodie"
