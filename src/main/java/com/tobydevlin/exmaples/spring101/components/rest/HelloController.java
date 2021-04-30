@@ -12,10 +12,10 @@ public class HelloController {
         return "Greetings from Spring Boot!";
     }
 
-//    @GetMapping("/test")
-//    public Recipe getRestaurant() {
-//        return Recipe.builder().title("new recipe").build();
-//
-//    }
+    @GetMapping("/test")
+    public Recipe getRestaurant() {
+        return Recipe.builder().title("new recipe").build();
+
+    }
 
 }

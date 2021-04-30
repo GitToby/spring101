@@ -12,7 +12,7 @@ import java.util.List;
 @Getter
 @Setter
 @Builder
-@Document("ingredients")
+@Document("scrapes")
 public class Recipe {
     @Id
     private String id;
