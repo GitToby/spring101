@@ -1,4 +1,4 @@
-package com.tobydevlin.exmaples.spring101.config;
+package com.tobydevlin.exmaples.spring101;
 
 import com.mongodb.MongoDriverInformation;
 import com.mongodb.client.MongoClient;
