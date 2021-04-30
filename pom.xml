@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>com.tobydevlin.examples</groupId>
-    <artifactId>spring101</artifactId>
+    <artifactId>spring201</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -28,10 +28,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springdoc</groupId>

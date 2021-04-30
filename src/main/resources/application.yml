@@ -1,8 +1,6 @@
 spring:
   data:
     rest:
-      max-page-size: 300
-      default-page-size: 150
       basePath: /data
 
 springdoc:
@@ -12,11 +10,7 @@ springdoc:
 server:
   port: 12345
 
-logging:
-  level:
-    org:
-      springframework:
-        data:
-          mongodb:
-            repository:
-              MongoRepository: DEBUG
+data:
+  mongo:
+    host: "tobytestcluster.uxibf.mongodb.net"
+    database: "foodie"
